@@ -1,9 +1,9 @@
-# AM::Errors#details
+# ActiveModel::Errors#details
 Added in [PR#18322](https://github.com/rails/rails/pull/18322)
 
 #### The way it was in Rails4...
 
-> In Rails4, it's impossible to figure out which validations actually failed, as AM::Errors provides only field name and translated error message.
+> In Rails4, it's impossible to figure out which validations actually failed, as ActiveModel::Errors provides only field name and translated error message.
 
 ![Rails4_errors](images/Rails4_errors.png)
 
@@ -16,7 +16,7 @@ But that kept something wanting, particularly in context of the APIs.
 
 > APIs are meant to be consumed by programs ( not humans :smile: ) and it makes sense to allow the programs, which are consuming our API, to decide how they want to show any errors to their users.
 
-#### With Rails5, we have a new `AM::Errors#details` method which makes this possible !
+#### With Rails5, we have a new `ActiveModel::Errors#details` method which makes this possible !
 
 
 ![rails5_errors](images/rails5_errors.png)
